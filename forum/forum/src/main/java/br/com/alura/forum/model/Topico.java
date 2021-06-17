@@ -15,8 +15,8 @@ public class Topico {
 	private LocalDateTime dataCriacao = LocalDateTime.now();
 	@Enumerated(EnumType.STRING)
 	private StatusTopico status = StatusTopico.NAO_RESPONDIDO;
-	@ManyToOne
-	private Usuario autor;
+	// @ManyToOne
+	// private Usuario autor;
 	@ManyToOne
 	private Curso curso;
 	@OneToMany(mappedBy = "topico")
@@ -96,13 +96,13 @@ public class Topico {
 		this.status = status;
 	}
 
-	public Usuario getAutor() {
-		return autor;
-	}
+	// public Usuario getAutor() {
+	// 	return autor;
+	// }
 
-	public void setAutor(Usuario autor) {
-		this.autor = autor;
-	}
+	// public void setAutor(Usuario autor) {
+	// 	this.autor = autor;
+	// }
 
 	public Curso getCurso() {
 		return curso;

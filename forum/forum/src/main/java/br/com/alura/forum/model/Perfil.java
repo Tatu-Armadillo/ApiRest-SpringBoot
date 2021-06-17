@@ -1,37 +1,37 @@
-package br.com.alura.forum.model;
+// package br.com.alura.forum.model;
 
-import javax.persistence.Entity;
+// import javax.persistence.Entity;
 
-import org.springframework.security.core.GrantedAuthority;
+// import org.springframework.security.core.GrantedAuthority;
 
-import javax.persistence.*;
+// import javax.persistence.*;
 
-@Entity
-public class Perfil implements GrantedAuthority {
+// @Entity
+// public class Perfil implements GrantedAuthority {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-    private String nome;
+//     @Id
+//     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//     private Long id;
+//     private String nome;
 
-    public Long getId() {
-        return id;
-    }
+//     public Long getId() {
+//         return id;
+//     }
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+//     public void setId(Long id) {
+//         this.id = id;
+//     }
 
-    public String getNome() {
-        return nome;
-    }
+//     public String getNome() {
+//         return nome;
+//     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
+//     public void setNome(String nome) {
+//         this.nome = nome;
+//     }
 
-    @Override
-    public String getAuthority() {
-        return this.nome;
-    }
-}
+//     @Override
+//     public String getAuthority() {
+//         return this.nome;
+//     }
+// }

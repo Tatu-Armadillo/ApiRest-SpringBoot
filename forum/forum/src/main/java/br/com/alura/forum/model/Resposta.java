@@ -13,8 +13,8 @@ public class Resposta {
 	@ManyToOne
 	private Topico topico;
 	private LocalDateTime dataCriacao = LocalDateTime.now();
-	@ManyToOne
-	private Usuario autor;
+	// @ManyToOne
+	// private Usuario autor;
 	private Boolean solucao = false;
 
 	@Override
@@ -74,13 +74,13 @@ public class Resposta {
 		this.dataCriacao = dataCriacao;
 	}
 
-	public Usuario getAutor() {
-		return autor;
-	}
+	// public Usuario getAutor() {
+	// 	return autor;
+	// }
 
-	public void setAutor(Usuario autor) {
-		this.autor = autor;
-	}
+	// public void setAutor(Usuario autor) {
+	// 	this.autor = autor;
+	// }
 
 	public Boolean getSolucao() {
 		return solucao;
